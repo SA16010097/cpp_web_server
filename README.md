@@ -13,6 +13,10 @@ step4: run server by ./my_http_server &
 
 Then you can get files from your server by browser. (example: input [server_ip]:3344/index.html，default ip is 3344)
 
-to do:
-1. add config to give server port and file directory;
-2. when qps higher, TCP sticky packet problem need to be solved.
+Main feature:
+1. Use epoll to realize socket io;
+2. User libco coroutine to avoid file io block.
+
+To do:
+1. Add config to give server port and file directory;
+2. When qps higher, TCP sticky packet problem need to be solved.
