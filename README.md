@@ -16,7 +16,7 @@ Then you can get files from your server by browser. (example: input [server_ip]:
 
 Main feature:
 1. Use epoll to realize socket io;
-2. User libco coroutine to avoid file io block.
+2. Use libco coroutine to avoid file io block.
 
 To do:
 1. Add config to give server port and file directory;
