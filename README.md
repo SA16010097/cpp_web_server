@@ -1,5 +1,3 @@
-#simple_http_server_by_cpp
-
 一个使用epoll和libco实现的简单web服务器
 
 This is a simple http server realized by cpp.
