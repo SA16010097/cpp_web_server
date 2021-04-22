@@ -14,7 +14,7 @@ step4: run server by ./my_http_server &
 
 Then you can get files from your server by browser. (example: input [server_ip]:3344/index.html，default ip is 3344)
 
-Main feature:
+Main features:
 1. Use epoll to realize socket io;
 2. Use libco coroutine to avoid file io block.
 
