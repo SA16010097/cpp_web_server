@@ -4,6 +4,7 @@ This is a simple http server realized by cpp.
 
 
 Usage:
+
 step1: cd simple_cpp_web_server
 
 step2: mkdir build && cd build && cmake .. && make -j4
@@ -12,7 +13,7 @@ step3: build directory /data/http_file_dir, and add files that can be get by cli
 
 step4: run server by ./my_http_server &
 
-Then you can get files from your server by browser. (example: input [server_ip]:3344/index.html，default ip is 3344)
+Then you can get files from your server by browser. (example: input [server_ip]:3344/index.html，default port is 3344)
 
 Main features:
 1. Use epoll to realize socket io;
