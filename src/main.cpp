@@ -6,6 +6,11 @@ int main()
 {
     auto so = my_socket();
     int sock_fd = so.get_socket(3344);
+    if(sock_fd < 0)
+    {
+        cout << "init socket err." << endl;
+        return 0;
+    }
     cout << "init socket done." << endl;
     
     my_epoll ep;
