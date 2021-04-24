@@ -16,7 +16,7 @@ step3: build directory /data/http_file_dir, and add files that can be get by cli
 
 step4: run server by ./my_http_server &
 
-Then you can get files from your server by browser. (example: input [server_ip]:3344/index.html，default port is 3344)
+Then you can get files from your server with browser. (example: input [server_ip]:3344/index.html，default port is 3344)
 
 To do:
 1. Add config to give server port and file directory;
