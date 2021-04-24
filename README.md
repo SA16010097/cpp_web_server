@@ -19,5 +19,5 @@ step4: run server by ./my_http_server &
 Then you can get files from your server with browser. (example: input [server_ip]:3344/index.html，default port is 3344)
 
 To do:
-1. Add config to give server port and file directory;
+1. Add config to confirm server port and file directory;
 2. When qps getting higher, TCP sticky packet problem need to be solved.
