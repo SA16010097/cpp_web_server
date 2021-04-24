@@ -33,6 +33,7 @@ int main()
             cout << "Raise event" << endl;
             handler H;
 
+            //to do 支持并发
             H.handle(events[0].data.fd); 
 
         }
