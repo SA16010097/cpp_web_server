@@ -20,4 +20,4 @@ Then you can get files from your server with browser. (example: input [server_ip
 
 To do:
 1. Add config to give server port and file directory;
-2. When qps higher, TCP sticky packet problem need to be solved.
+2. When qps getting higher, TCP sticky packet problem need to be solved.
