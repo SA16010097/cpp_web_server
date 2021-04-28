@@ -12,6 +12,9 @@
 如果是多核服务器，建议使用线程池加libco的形式。如果bthread这种M:N的协程也支持阻塞函数hook的机制，才是最完美的选择。
 但是遗憾的是目前bthread不支持hook。
 
+To do:
+
+这里没处理TCP粘包（应用层的粘包）的问题。
 
 This is a simple http server realized by cpp.
 
