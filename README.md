@@ -14,7 +14,7 @@
 
 To do:
 
-这里没处理TCP粘包（应用层的粘包）的问题，思路就是在包头加上包的size数据，根据size读取完整的包。
+这里没处理TCP粘包（应用层的粘包）的问题，思路就是在包头加上包的size数据，先读size，根据size读取完整的包。
 
 # E N G L I S H
 This is a simple http server realized by cpp.
