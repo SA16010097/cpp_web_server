@@ -1,4 +1,4 @@
-一个使用epoll和libco实现的简单web服务器
+# 一个使用epoll和libco实现的简单web服务器
 
 
 实现方案：
@@ -16,6 +16,7 @@ To do:
 
 这里没处理TCP粘包（应用层的粘包）的问题。
 
+# E N G L I S H
 This is a simple http server realized by cpp.
 
 Main features:
