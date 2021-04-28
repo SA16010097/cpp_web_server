@@ -1,14 +1,17 @@
 一个使用epoll和libco实现的简单web服务器
 
+
 实现方案：
 1. 使用epoll，io效率高。边缘触发，while读取；
 2. libco实现数据handler。
+
 
 为什么使用libco？
 
 我买的服务器是单核的，这个时候单线程无阻塞是效率最高的执行方式，libco作为支持阻塞函数hook机制的非对称协程，完美适应。
 如果是多核服务器，建议使用线程池加libco的形式。如果bthread这种M:N的协程也支持阻塞函数hook的机制，才是最完美的选择。
 但是遗憾的是目前bthread不支持hook。
+
 
 This is a simple http server realized by cpp.
 
