@@ -3,7 +3,7 @@
 
 实现方案：
 1. 使用epoll，io效率高。边缘触发，while读取；
-2. libco实现数据handler。
+2. libco实现数据handler，避免io阻塞。
 
 
 为什么使用libco？
