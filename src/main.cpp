@@ -24,7 +24,8 @@ int main()
 
     while(true)
     {
-        if(ep.raise_event(events) <= 0)
+        int res = ep.raise_event(events);
+        if(res <= 0)
         {
             cout << "Raise event nothing return" << endl;
         }
@@ -33,8 +34,8 @@ int main()
             cout << "Raise event" << endl;
             handler H;
 
-            //to do 支持并发
-            H.handle(events[0].data.fd); 
+            for(int i = 0; i < res; ++i)
+                H.handle(events[i].data.fd); 
 
         }
     }
